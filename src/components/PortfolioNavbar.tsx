@@ -4,32 +4,34 @@ import {
   Navbar,
   NavbarBrand,
   NavbarContent,
-  NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
-import { Switch } from "@nextui-org/switch";
 import { Link } from "@nextui-org/link";
 import { useState } from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function PortfolioNavbar() {
-  const [isDark, setIsDark] = useState(true);
+  // const [isDark, setIsDark] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    if (!isDark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  };
+  // const toggleTheme = () => {
+  //   setIsDark(!isDark);
+  //   if (!isDark) {
+  //     document.documentElement.classList.add("dark");
+  //   } else {
+  //     document.documentElement.classList.remove("dark");
+  //   }
+  // };
 
   return (
-    <Navbar onMenuOpenChange={setIsOpen} isBordered position="sticky">
+    <Navbar
+      isMenuOpen={isOpen}
+      onMenuOpenChange={setIsOpen}
+      isBordered
+      position="sticky"
+    >
       <NavbarContent>
         <NavbarMenuToggle
           className="sm:hidden"

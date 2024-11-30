@@ -13,7 +13,7 @@ export default function Home() {
           <div className="flex flex-col-reverse gap-6 md:gap-0 md:flex-row justify-between items-center">
             <div className="text-center md:text-left">
               <h2 className="text-3xl lg:text-4xl font-semibold text-primary-600">
-                Hey There! I'm-
+                Hey There! I&apos;m-
               </h2>
               <h1 className="text-6xl lg:text-8xl font-bold tracking-tight">
                 Gautam Giri.
@@ -24,8 +24,8 @@ export default function Home() {
                   Software Developer.
                 </span>{" "}
                 <span className="text-gray-600">
-                  I'm passionate about creating efficient, scalable software
-                  solutions and automation tools.
+                  I&apos;m passionate about creating efficient, scalable
+                  software solutions and automation tools.
                 </span>
               </p>
 

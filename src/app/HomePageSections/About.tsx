@@ -13,21 +13,21 @@ export default function About() {
           <div className="mt-8 grid grid-cols-2 gap-2">
             <div className="whitespace-pre-wrap space-y-3">
               <p>
-                I'm a tech enthusiast and I've been passionate about computers
-                and technology from a young age.
+                I&apos;m a tech enthusiast and I&apos;ve been passionate about
+                computers and technology from a young age.
               </p>
               <p>
                 My journey started with exploring various tools and technologies
                 to build projects, which led me to dive deeper into coding. Over
-                time, I've gained hands-on experience with several programming
-                languages and frameworks, working on backend APIs, desktop
-                applications, mobile apps, and web solutions.
+                time, I&apos;ve gained hands-on experience with several
+                programming languages and frameworks, working on backend APIs,
+                desktop applications, mobile apps, and web solutions.
               </p>
               <p>
-                I'm passionate about creating innovative solutions, automating
-                tasks, and contributing to open source. My current focus is on
-                Web Development and Machine Learning, DevOps, and advancing my
-                skills in ML and Cloud Computing.
+                I&apos;m passionate about creating innovative solutions,
+                automating tasks, and contributing to open source. My current
+                focus is on Web Development and Machine Learning, DevOps, and
+                advancing my skills in ML and Cloud Computing.
               </p>
             </div>
             <div>

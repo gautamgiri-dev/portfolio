@@ -17,7 +17,6 @@ import {
   NumpyChip,
   DataScienceChip,
   SeleniumChip,
-  NodeJsChip,
   JavascriptChip,
   SwaggerChip,
 } from "@/components/SkillChips";
