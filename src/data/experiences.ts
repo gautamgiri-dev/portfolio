@@ -20,31 +20,12 @@ import {
   JavascriptChip,
   SwaggerChip,
 } from "@/components/SkillChips";
-import { ComponentType } from "react";
 
 import k12Logo from "@/public/experience/k12-aa.png";
 import estromeLogo from "@/public/experience/estrome_technologies_logo.jpeg";
 import aiCanLogo from "@/public/experience/ai_can_co_in_logo.jpeg";
 import designAndCodeLogo from "@/public/experience/designandcode-logo.png";
-
-export interface ExperienceCardProps {
-  company: {
-    name: string;
-    logo: StaticImport | string;
-    location: string;
-    href: string;
-  };
-  position: {
-    title: string;
-    type: string;
-    startMonthYear: string;
-    endMonthYear: string;
-    availability: "On-Site" | "Remote" | "Hybrid";
-  };
-  skills: ComponentType[];
-  description: string[];
-  credentialUrl?: string | null;
-}
+import { ExperienceCardProps } from "@/interfaces";
 
 export const experiences: ExperienceCardProps[] = [
   {

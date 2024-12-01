@@ -67,7 +67,7 @@ export default function PortfolioNavbar() {
           Experience
         </Button>
         <Button
-          href="/about"
+          href="#about"
           as={Link}
           radius="sm"
           variant="light"
@@ -77,7 +77,7 @@ export default function PortfolioNavbar() {
           About
         </Button>
         <Button
-          href="/contact"
+          href="#contact"
           as={Link}
           radius="sm"
           variant="light"
@@ -112,13 +112,16 @@ export default function PortfolioNavbar() {
       </NavbarContent> */}
       <NavbarMenu>
         <NavbarMenuItem>
-          <Link href="/about">About</Link>
+          <Link href="#experience">Experience</Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link href="/projects">Projects</Link>
+          <Link href="#projects">Projects</Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link href="/contact">Contact</Link>
+          <Link href="#about">About</Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link href="#contact">Contact</Link>
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>

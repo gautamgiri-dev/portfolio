@@ -11,7 +11,7 @@ const config: Config = {
   safelist: [
     {
       pattern:
-        /(bg|text)-(yellow|blue|emerald|amber|green|orange|cyan|red|violet|indigo|rose|stone|sky|slate|purple|zinc)-(100|700)/,
+        /(bg|text)-(yellow|blue|emerald|amber|green|orange|cyan|red|violet|indigo|rose|stone|sky|slate|purple|zinc|pink)-(100|700)/,
     },
   ],
   theme: {

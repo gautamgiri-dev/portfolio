@@ -4,8 +4,6 @@ import abacusViewCover from "@/public/projects/abacus-view.gif";
 import simpleReactTableCover from "@/public/projects/simple-react-table.jpeg";
 import expenseReporterCover from "@/public/projects/expense-reporter.png";
 import cuhResultPortalCover from "@/public/projects/cuh-result-portal.png";
-
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import {
   AndroidStudioChip,
   FlaskChip,
@@ -17,22 +15,13 @@ import {
   TypescriptChip,
   XMLChip,
 } from "@/components/SkillChips";
-import { ComponentType } from "react";
-
-export interface ProjectCardProps {
-  image: string | StaticImport;
-  title: string;
-  href: string;
-  description: string;
-  skills: ComponentType[];
-  footer?: string;
-}
+import { ProjectCardProps } from "@/interfaces";
 
 export const projects: ProjectCardProps[] = [
   {
     title: "FaceFit",
     description:
-      "A smart tool that analyzes facial beauty and symmetry, offering insights and recommendations.",
+      "A smart tool that leverages Deep Learning to analyze facial beauty and symmetry, offering insights and recommendations.",
     href: "#",
     footer: "Developed as a part of final year minor project.",
     image: faceFitCover,
@@ -60,7 +49,7 @@ export const projects: ProjectCardProps[] = [
     title: "Expense Reporter",
     description:
       "A user-friendly mobile application for tracking and managing expenses and reporting reimbursements.",
-    footer: "Developed as a part of training of WorldSkills 2024.",
+    footer: "Developed as a part of training for WorldSkills 2024.",
     href: "https://github.com/gautamgiri-dev/simple-react-table",
     image: expenseReporterCover,
     skills: [JavaChip, AndroidStudioChip],

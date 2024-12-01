@@ -2,8 +2,8 @@ import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 import Image from "next/image";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
-import { Divider } from "@nextui-org/react";
-import { ExperienceCardProps } from "@/data/experiences";
+import { cn, Divider } from "@nextui-org/react";
+import { ExperienceCardProps } from "@/interfaces";
 
 export default function ExperienceCard(props: ExperienceCardProps) {
   return (
@@ -49,12 +49,18 @@ export default function ExperienceCard(props: ExperienceCardProps) {
         </div>
       </CardBody>
       <Divider />
-      <CardFooter className="justify-center">
+      <CardFooter
+        className="justify-center"
+        title={!props.credentialUrl ? "Available upon request" : undefined}
+      >
         <Link
-          className="flex gap-2 items-center justify-center text-sm text-default-500 hover:text-primary-500 duration-100"
+          className={cn(
+            "flex gap-2 items-center justify-center text-sm text-default-500 hover:text-primary-500 duration-100",
+            !props.credentialUrl && "pointer-events-none"
+          )}
           href={props.credentialUrl ?? "#"}
-          target={props.credentialUrl ? "_blank" : undefined}
-          title={!props.credentialUrl ? "Available upon request" : undefined}
+          aria-disabled={!props.credentialUrl}
+          target={"_blank"}
         >
           See Credential <FiExternalLink />
         </Link>

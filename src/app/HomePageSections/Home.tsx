@@ -24,10 +24,20 @@ export default function Home() {
                   Software Developer.
                 </span>{" "}
                 <span className="text-gray-600">
-                  I&apos;m passionate about creating efficient, scalable
+                  I&apos;m passionate about creating efficient and scalable
                   software solutions and automation tools.
                 </span>
               </p>
+
+              <div className="flex flex-col gap-2 mt-4">
+                <span>
+                  ⚡Currently working as Freelance Software Developer.
+                </span>
+                <span>
+                  🚀Interested in Cloud Computing, Distributed Systems and
+                  Artificial Intelligence.
+                </span>
+              </div>
 
               <div className="space-x-2 mt-6">
                 <Button

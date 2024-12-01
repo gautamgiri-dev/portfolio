@@ -1,6 +1,6 @@
 "use client";
 
-import { ProjectCardProps } from "@/data/projects";
+import { ProjectCardProps } from "@/interfaces";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 import { Divider } from "@nextui-org/divider";
 import Image from "next/image";
