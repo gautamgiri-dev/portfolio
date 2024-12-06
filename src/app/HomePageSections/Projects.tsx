@@ -18,7 +18,7 @@ export default function Projects() {
         </div>
         <Link
           className="flex w-fit mx-auto gap-2 hover:gap-3 duration-100 items-center text-lg text-primary-500 font-normal"
-          href="/projects"
+          href="/under-development"
         >
           Explore more
           <FaArrowRight />

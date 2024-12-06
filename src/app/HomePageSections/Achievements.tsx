@@ -18,7 +18,7 @@ export default function Achievements() {
         </div>
         <Link
           className="flex w-fit mx-auto gap-2 hover:gap-3 duration-100 items-center text-lg text-primary-500 font-normal"
-          href="/achievements"
+          href="/under-development"
         >
           View more
           <FaArrowRight />
