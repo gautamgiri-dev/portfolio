@@ -46,7 +46,7 @@ export const skills: SkillCardProps[] = [
       },
       {
         chip: JavascriptChip,
-        rating: 3,
+        rating: 4,
       },
       {
         chip: JavaChip,
